@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+        Arial, 'Noto Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--ant-color-split);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.271) !important;
+}
+
+/* Light Mode */
+:root {
+    --primary-color: #1677ff;
+    --primary-gradient: linear-gradient(90deg, #1677ff 0%, #4096ff 100%);
+    --bg-color: #f0f5ff;
+    --bg-container: #ffffff;
+    --bg-elevated: #f7faff;
+    --border-color: #d9e6ff;
+    --text-color: rgba(0, 0, 0, 0.88);
+    --text-secondary: rgba(0, 0, 0, 0.65);
+}
+
+/* Dark Mode */
+[data-theme='dark'] {
+    --primary-color: #177ddc;
+    --primary-gradient: linear-gradient(90deg, #177ddc 0%, #40a9ff 100%);
+    --bg-color: #181824;
+    --bg-container: #1f1f2e;
+    --bg-elevated: #2a2a3b;
+    --border-color: #3a3a4d;
+    --text-color: rgba(255, 255, 255, 0.88);
+    --text-secondary: rgba(255, 255, 255, 0.65);
+}
+
+/* CRUD Operation Buttons */
+/* Create/Add button */
+.btn-add {
+    background: linear-gradient(90deg, #52c41a 0%, #73d13d 100%) !important;
+    border: none !important;
+    color: white !important;
+}
+
+.btn-add:hover {
+    background: linear-gradient(90deg, #73d13d 0%, #95de64 100%) !important;
+    color: white !important;
+}
+
+/* Edit button */
+.btn-edit {
+    background: linear-gradient(90deg, #1890ff 0%, #40a9ff 100%) !important;
+    border: none !important;
+    color: white !important;
+}
+
+.btn-edit:hover {
+    background: linear-gradient(90deg, #40a9ff 0%, #69c0ff 100%) !important;
+    color: white !important;
+}
+
+/* Delete button */
+.btn-delete {
+    background: linear-gradient(90deg, #ff4d4f 0%, #ff7875 100%) !important;
+    border: none !important;
+    color: white !important;
+}
+
+.btn-delete:hover {
+    background: linear-gradient(90deg, #ff7875 0%, #ffa39e 100%) !important;
+    color: white !important;
+}
+
+/* Block button */
+.btn-block {
+    background: linear-gradient(90deg, #faad14 0%, #ffc53d 100%) !important;
+    border: none !important;
+    color: white !important;
+}
+
+.btn-block:hover {
+    background: linear-gradient(90deg, #ffc53d 0%, #ffd666 100%) !important;
+    color: white !important;
+}
+
+/* Unblock button */
+.btn-unblock {
+    background: linear-gradient(90deg, #52c41a 0%, #73d13d 100%) !important;
+    border: none !important;
+    color: white !important;
+}
+
+.btn-unblock:hover {
+    background: linear-gradient(90deg, #73d13d 0%, #95de64 100%) !important;
+    color: white !important;
+}
+
+/* Button hover effects */
+.btn-add:hover,
+.btn-edit:hover,
+.btn-delete:hover,
+.btn-block:hover,
+.btn-unblock:hover {
+    opacity: 0.9 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Table Styles */
+.dark-table .ant-table {
+    background-color: #1f1f2e !important;
+}
+
+.dark-table .ant-table-thead > tr > th {
+    background-color: #2a2a3b !important;
+    color: rgba(255, 255, 255, 0.88) !important;
+    border-bottom: 1px solid #3a3a4d !important;
+}
+
+.dark-table .ant-table-tbody > tr > td {
+    border-bottom: 1px solid #3a3a4d !important;
+    color: rgba(255, 255, 255, 0.88) !important;
+}
+
+.dark-table .ant-table-tbody > tr:hover > td {
+    background-color: #2a2a3b !important;
+}
+
+.light-table .ant-table {
+    background-color: #ffffff !important;
+}
+
+.light-table .ant-table-thead > tr > th {
+    background-color: #f7faff !important;
+    color: rgba(0, 0, 0, 0.88) !important;
+    border-bottom: 1px solid #d9e6ff !important;
+}
+
+.light-table .ant-table-tbody > tr > td {
+    border-bottom: 1px solid #d9e6ff !important;
+    color: rgba(0, 0, 0, 0.88) !important;
+}
+
+.light-table .ant-table-tbody > tr:hover > td {
+    background-color: #f0f5ff !important;
+}
+
+/* Menu Styles - Light Mode */
+.light-menu .ant-menu-item {
+  color: rgba(0, 0, 0, 0.65) !important;
+  margin: 4px 8px !important;
+  border-radius: 6px !important;
+}
+
+.light-menu .ant-menu-item:hover {
+  color: #1677ff !important;
+  background: linear-gradient(90deg, #33ff00 0%, #bae0ff 100%) !important;
+}
+
+.light-menu .ant-menu-item-selected {
+  color: #1677ff !important;
+  font-weight: 500 !important;
+  background: linear-gradient(90deg,  #52ed0a 0%,#bbd3ba 100% ) !important;
+}
+
+.light-menu .ant-menu-item-selected .anticon {
+  color: #1677ff !important;
+}
+
+/* Menu Styles - Dark Mode */
+.dark-menu .ant-menu-item {
+  color: rgba(255, 255, 255, 0.65) !important;
+  margin: 4px 8px !important;
+  border-radius: 6px !important;
+}
+
+.dark-menu .ant-menu-item:hover {
+  color: #40a9ff !important;
+  background: linear-gradient(90deg, #2e3a4d 0%, #3d4a65 100%) !important;
+}
+
+.dark-menu .ant-menu-item-selected {
+  color: #ffffff !important;
+  font-weight: 500 !important;
+  background: linear-gradient(90deg, #17dc3b 0%, #40a9ff 100%) !important;
+}
+
+.dark-menu .ant-menu-item-selected .anticon {
+  color: #ffffff !important;
+}
+
+
+.ant-layout-sider-trigger{
+    display: none !important;
+}
+
+/* Sidebar transition */
+.ant-layout-sider {
+  transition: all 0.6s ease-in-out !important;
+}
+
+.ant-layout-sider-children {
+  transition: all 0.6s ease-in-out !important;
+}
+
+.ant-menu {
+  transition: all 0.6s ease-in-out !important;
+}
+
+/* Layout transitions */
+.ant-layout {
+  transition: all 0.6s ease-in-out !important;
+}
+
+.ant-layout-header {
+  transition: all 0.6s ease-in-out !important;
+}
+
+.ant-layout-content {
+  transition: margin-left 0.6s ease-in-out !important;
+}
+
+/* Mobile styles for blocked users page */
+@media (max-width: 767px) {
+  .btn-unblock {
+    font-size: 12px !important;
+    height: 32px !important;
+    padding: 4px 12px !important;
+  }
+
+  .ant-card {
+    border-radius: 8px !important;
+  }
+
+  .ant-card .ant-space {
+    margin-bottom: 0 !important;
+  }
+
+  .ant-tag {
+    margin-right: 0 !important;
+  }
+
+  .ant-typography {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Desktop styles for blocked users page */
+@media (min-width: 768px) {
+  .btn-unblock {
+    min-width: 140px;
+  }
+
+  .ant-table-wrapper {
+    background: transparent !important;
+  }
+}
